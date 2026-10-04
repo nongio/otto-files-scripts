@@ -11,8 +11,8 @@ executable:
 
 ```sh
 mkdir -p ~/.config/otto/files-scripts
-cp contact-sheet ~/.config/otto/files-scripts/
-chmod +x ~/.config/otto/files-scripts/contact-sheet
+cp contact-sheet pdf ~/.config/otto/files-scripts/
+chmod +x ~/.config/otto/files-scripts/*
 ```
 
 Open a new Files window and the commands are there.
@@ -21,6 +21,8 @@ Open a new Files window and the commands are there.
 
 | Script | Command | What it does | Needs |
 |---|---|---|---|
+| `pdf` | PDF from Pictures | Turns the selected pictures into one PDF, a page each, in the order they were selected. Asks for the file name, shows progress page by page, and can be undone. | `img2pdf`, `pikepdf` (Python) |
+| `pdf` | Searchable PDF from Pictures | The same, with a text layer read by tesseract so the PDF can be searched and copied from. Asks which language to read; only offered when tesseract is installed. | `img2pdf`, `pikepdf`, `tesseract` and its language data |
 | `contact-sheet` | Make Contact Sheet | Lays the selected pictures out on one page, four across, each labelled with its name, and saves it as a JPEG next to them. Shows a preview of the pictures it will use, progress while it works, and can be undone. | ImageMagick (`montage`) |
 
 ## Write your own
