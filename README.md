@@ -28,6 +28,6 @@ Open a new Files window and the commands are there.
 A script is any executable, in any language, that reads and writes JSON. Files
 asks it to `describe` its commands, then sends `preview` and `run` requests
 with the selection. The guide is
-[Custom Commands in Files](https://nongio.github.io/otto/files-custom-commands.html).
+[Custom Commands in Files](https://nongio.github.io/otto/files-custom-commands/).
 
 Pull requests with new scripts are welcome.
